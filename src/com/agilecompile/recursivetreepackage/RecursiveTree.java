@@ -10,11 +10,14 @@ import java.util.Scanner;
 public class RecursiveTree {
 
 	public static void main(String[] args) throws Exception {
-	
+		
+		//Initializes scanner to receive input from command line or console.
 		Scanner scanner = new Scanner(System.in);
 	    System.out.println("Please enter a directory path:");
 	    String directoryPath = scanner.nextLine();
-
+	    
+	    
+	    //Outputs directory
 	    try {
 	        Path currentPath = Paths.get(directoryPath);
 	        System.out.println("Listing files in directory: " + currentPath);
